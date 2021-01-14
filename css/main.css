@@ -1,0 +1,42 @@
+:root{
+    --vermelho:#E50914;
+    --preto:#141414;
+    --branco-fonte: #FFF;
+    --branco: #AAA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--preto);
+    font-family: sans-serif;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.70vw;
+    margin: 15px 20px 0 5px;
+}
+
+header .container nav a {
+    text-decoration: none;
+    color: var(--branco-fonte);
+    margin: 5px;
+}
+
+header .container nav a:hover {
+    color: var(--branco);
+}
+
+.logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 1.10vw;
+    margin-right: 25px;
+}
