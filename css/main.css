@@ -5,6 +5,8 @@
     --branco: #AAA;
 }
 
+/*css reset*/
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +16,7 @@
 body {
     background-color: var(--preto);
     font-family: sans-serif;
+    color: var(--branco-fonte);
 }
 
 header .container{
@@ -21,13 +24,17 @@ header .container{
     flex-direction: row;
     align-items: center;
     font-size: 0.70vw;
-    margin: 15px 20px 0 5px;
+    padding: 20px 20px 20px 80px;
+    background-color: var(--preto);
+    width: 100vw;
+    position: fixed;
+    top: 0;
 }
 
 header .container nav a {
     text-decoration: none;
-    color: var(--branco-fonte);
     margin: 5px;
+    color: var(--branco-fonte);
 }
 
 header .container nav a:hover {
@@ -39,4 +46,38 @@ header .container nav a:hover {
     font-family: 'Arial Black', Times;
     font-size: 1.10vw;
     margin-right: 25px;
+    cursor: pointer;
+}
+
+/*main film*/
+
+.main-film {
+    font-size: 1.3vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 30%;
+    margin-left: 5%;
+    text-shadow: 2px 2px var(--preto);
+}
+
+.title {
+    margin-bottom: 12px;
+    font-size: 1.5vw;
+}
+
+.synopsis {
+    font-size: 1vw;
+}
+
+#myVideo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+    min-width: 100%;
+    margin-top: -160px;
 }
