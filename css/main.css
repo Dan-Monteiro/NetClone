@@ -59,15 +59,19 @@ header .container nav a:hover {
     margin-top: 30%;
     margin-left: 5%;
     text-shadow: 2px 2px var(--preto);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .title {
     margin-bottom: 12px;
-    font-size: 1.5vw;
+    font-size: 3vw;
 }
 
 .synopsis {
-    font-size: 1vw;
+    font-size: 1.1vw;
 }
 
 #myVideo {
@@ -80,4 +84,27 @@ header .container nav a:hover {
     z-index: -100;
     min-width: 100%;
     margin-top: -160px;
+}
+
+.buttons {
+    margin-top: 3vw;
+}
+
+.btn-cover {
+    padding: 12px;
+    padding-left: 19px;
+    padding-right: 19px;
+    border-radius: 19ch;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    font-family: sans-serif;
+}
+
+.btn-cover:hover {
+    background-color: rgba(26, 17, 5, 0.37);
+    text-shadow: rgba(26, 17, 5, 0.86);
+    color: #AAA;
+    transform:scaleY(1.1);
+    transition: 0.1s
 }
