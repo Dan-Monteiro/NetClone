@@ -50,7 +50,6 @@ header .container nav a:hover {
 }
 
 /*main film*/
-
 .main-film {
     font-size: 1.3vw;
     position: absolute;
@@ -75,14 +74,15 @@ header .container nav a:hover {
 }
 
 #myVideo {
-    position: fixed;
+    position: relative;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     overflow: hidden;
     z-index: -100;
-    min-width: 100%;
+    width: 100%;
+    height: 100%;
     margin-top: -160px;
 }
 
@@ -109,4 +109,16 @@ header .container nav a:hover {
     background-color: whitesmoke;
     text-shadow: rgba(26, 17, 5, 0.86);
     color: black;
+}
+
+.box-film {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.carousel-films {
+    display: relative;
+    margin: 25px;
+    margin-top: -30px;
 }
