@@ -91,20 +91,22 @@ header .container nav a:hover {
 }
 
 .btn-cover {
-    padding: 12px;
-    padding-left: 19px;
-    padding-right: 19px;
-    border-radius: 19ch;
-    font-weight: bold;
+    background-color: rgba(0,0,0,.50);
+    padding: 15px 30px;
+    margin-left: 10px;
     cursor: pointer;
     border: none;
     font-family: sans-serif;
+    color: white;
+    transition: 0.3s ease all;
+}
+
+.btn-cover i{
+    margin-right: 10px;
 }
 
 .btn-cover:hover {
-    background-color: rgba(26, 17, 5, 0.37);
+    background-color: whitesmoke;
     text-shadow: rgba(26, 17, 5, 0.86);
-    color: #AAA;
-    transform:scaleY(1.1);
-    transition: 0.1s
+    color: black;
 }
